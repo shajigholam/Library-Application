@@ -1,6 +1,5 @@
 ////***********************************************************************
 // Intro. to Object Oriented Programming
-// Final Project Milestone 4
 //Name: Samaneh Hajigholam
 //email: shajigholam@myseneca.ca
 //studentID: 119751220
@@ -19,7 +18,6 @@ using namespace std;
 namespace sdds {
     Book::Book() : Publication()
     {
-        //no need for constructor of the base?
         m_authorName = nullptr;
     }
     Book::~Book()
