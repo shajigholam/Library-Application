@@ -1,6 +1,5 @@
 ////***********************************************************************
 // Intro. to Object Oriented Programming
-// Final Project Milestone 4
 //Name: Samaneh Hajigholam
 //email: shajigholam@myseneca.ca
 //studentID: 119751220
