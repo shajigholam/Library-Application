@@ -1,6 +1,5 @@
 ////***********************************************************************
 // Intro. to Object Oriented Programming
-// Final Project Milestone 5
 //Name: Samaneh Hajigholam
 //email: shajigholam@myseneca.ca
 //studentID: 119751220
@@ -22,7 +21,7 @@ namespace sdds
     LibApp::LibApp(const char* fileName) : m_mainMenu("Seneca Library Application"), m_exitMenu("Changes have been made to the data, what would you like to do?"), m_publicationType("Choose the type of publication:")
     {
         if (fileName) {
-            strncpy(m_fileName, fileName, MAX_TITLE_PUBLICATION); //??
+            strncpy(m_fileName, fileName, MAX_TITLE_PUBLICATION);
         }
         m_changed = false;
         m_NOLP = 0; //jump
@@ -45,9 +44,6 @@ namespace sdds
         }
 
         return result;
-//        Menu confirmMenu(message);
-//        confirmMenu << "Yes";
-//        return (confirmMenu.Menu::run() == 1); //correct?
     }
     void LibApp::load() {
         
@@ -156,7 +152,7 @@ namespace sdds
 
         return libRef;
     }
-    void LibApp::returnPub() //do i need abort?? //change if?/
+    void LibApp::returnPub() 
     {
         bool abort = false;
         cout << "Return publication to the library" << endl;
@@ -187,7 +183,6 @@ namespace sdds
         if (m_NOLP >= SDDS_LIBRARY_CAPACITY) {
             cout << "Library is at its maximum capacity!" << endl;
             full = true;
-            //and exit?
         }
         if (!full) {
             cout << "Adding new publication to the library" << endl;
@@ -214,7 +209,7 @@ namespace sdds
                 cin.ignore(1000, '\n');
                 cin.clear();
                 cout << "Aborted!" << endl;
-                //and exit?
+                //and exit
                 exit(0);
             }
             else {

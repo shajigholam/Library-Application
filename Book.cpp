@@ -27,7 +27,6 @@ namespace sdds {
     }
     Book::Book(const Book& other)
     {
-        //is it enough or do i need to use the base class copy constr?
         *this = other;
     }
     Book& Book::operator=(const Book& other)
